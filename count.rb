@@ -1,18 +1,21 @@
-the_file='dataFile.txt'
-h = Hash.new
-f = File.open(the_file, "r")
+#Ruby program to find the second freqeuntly used word in a text file.
+#Ruby program to find the word frequency in a file.
+#Input data file file for this program is 'dataFile.txt'
+input_file='dataFile.txt'
+hash1 = Hash.new
+f = File.open(input_file, "r")
 f.each_line { |line|
   words = line.split
-  words.each { |w|
-    if w.length >= 3
-      if h.has_key?(w)
-        h[w] = h[w] + 1
+  words.each { |word|
+    if word.length >= 3
+      if hash1.has_key?(word)
+        hash1[word] = hash1[word] + 1
       else
-        h[w] = 1
+        hash1[word] = 1
       end
     end
   }
 }
 puts "Word that appeared second highest number of times :"
-puts h.invert.values[-2], " ",h.invert.keys[-2] 
+puts hash1.invert.values[-2], " ",hash1.invert.keys[-2] 
 #puts h.invert.max&.last
