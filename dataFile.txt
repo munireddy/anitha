@@ -1,0 +1,1 @@
+This power is amazing and so useful for freelancers who work on many different projects, or companies that need to bring new members of a team up to speed as quickly as possible. With the use of Vagrant, the configuration of the development and the production environment can be mirrored as closely as possible. And errors like “works on my machine” can become a thing of the past.
