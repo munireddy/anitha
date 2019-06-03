@@ -14,5 +14,5 @@ f.each_line { |line|
   }
 }
 puts "Word that appeared second hsighest number of tumes"
-puts h.invert.values[-2]
+puts h.invert.values[-2], " ",h.invert.keys[-2] 
 #puts h.invert.max&.last
