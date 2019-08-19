@@ -7,11 +7,11 @@ trigger:
 - master
 
 pool:
-  vmImage: ''windows-latest'
-
+  vmImage: 'windows-latest'
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: dir /od
-
+  - script: echo hello from Windows with a change in the line
+  - script: md sampledir
+  - script: echo "Verizo@1" >> c:\cred.txt
+  - script: |
+        dir /od 
+        dir
