@@ -20,12 +20,12 @@ steps:
         echo After Login
         az resource list --out table > data2.txt 2>&1
         echo After Resource List
+  - script: |      
         dir /od
         echo  After resource List
         type data2.txt
         dir
-        az vm list  --out table > data3.txt 2>&1
-        type data3.txt
+        
 # {
 #  "appId": "3d587273-dcac-47f1-b714-72f244c67c52A",
 #  "displayName": "ServicePrincipalName1",
