@@ -21,6 +21,7 @@ steps:
         # This command will list all the resouces you have. 
         az resource list --out table | tee data2.txt
         type data2.txt
+        dir
         az vm list  --out table
 #{
 #  "appId": "3d587273-dcac-47f1-b714-72f244c67c52A",
