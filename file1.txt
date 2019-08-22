@@ -1,1 +1,9 @@
-THis is a sample file in file
+from my devops enginner collegues
+he is asking me to do
+
+"If you could look into using terraform to auto set up the boot diagnostics that would be grea
+Also setting up ssh keys so we can leverage the jumpbox"
+
+he is asking about. after creating a virtual machine scale set in azure, in order to login we need to go to instance and do the boot diagnostics like assigning the storage account right, 
+he want that automation anna.
+can you help me on that.
